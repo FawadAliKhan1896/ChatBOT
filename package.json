@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@sanity/client": "^7.4.1",
+    "groq": "^3.91.0"
+  }
+}

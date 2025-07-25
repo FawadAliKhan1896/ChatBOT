@@ -1,0 +1,50 @@
+[
+    {
+        "role": "user",
+        "content": "Hello"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello Amy! Its nice to meet you. How can I assist you today?"
+    },
+    {
+        "role": "user",
+        "content": "Bye"
+    },
+    {
+        "role": "assistant",
+        "content": "Goodbye Amy! It was nice chatting with you"
+    },
+    {
+        "role": "user",
+        "content": "-  (query)."
+    },
+    {
+        "role": "assistant",
+        "content": "I'm here to help. What's on your mind?"
+    },
+    {
+        "role": "user",
+        "content": "-  (query)."
+    },
+    {
+        "role": "assistant",
+        "content": "I'm ready when you are. What's your question?"
+    },
+    {
+        "role": "user",
+        "content": "-  (query)."
+    },
+    {
+        "role": "assistant",
+        "content": "I'm waiting for your question. Go ahead and ask me anything!"
+    },
+    {
+        "role": "user",
+        "content": "-  (query)."
+    },
+    {
+        "role": "assistant",
+        "content": "I'm still here, ready to help. What do you need to know?"
+    }
+]

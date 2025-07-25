@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Speech Recognition</title></head>
+<body>
+    <button id="start" onclick="startRecognition()">Start Recognition</button>
+    <button id="stop" onclick="stopRecognition()">Stop Recognition</button>
+    <p id="output" style="font-size:24px;"></p>
+
+    <script>
+        var output = document.getElementById('output');
+        var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+        recognition.lang = "en";
+        recognition.continuous = false;
+        recognition.interimResults = false;
+
+        function startRecognition() {
+            output.innerText = "";
+            recognition.start();
+        }
+
+        function stopRecognition() {
+            recognition.stop();
+        }
+
+        recognition.onresult = function(event) {
+            var transcript = event.results[0][0].transcript;
+            output.innerText = transcript;
+        };
+
+        recognition.onerror = function(event) {
+            output.innerText = "Error: " + event.error;
+        };
+    </script>
+</body>
+</html>
